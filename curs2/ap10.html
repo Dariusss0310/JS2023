@@ -8,20 +8,19 @@
 </head>
 <body>
     <script>
-        var d = new Date();
-        let t =13; // d.getHours();
 
-        // alert(t);
-        if(t<=11){
-        alert('Bna dimi!')}
-        else if (t > 11 && t <17){
-            alert('Bna ziua!')
+        let n = eval(prompt('Introduceti un numar', 10));
+        let i = 1;
+        while(i <= n){
+            console.log(i);
+
+            i+=2;
         }
-        else{
-            alert('Bna seara!')
-        }s
-
-        
+        let j =1;
+        do{
+            console.log(j);
+            j += 2;
+        }while(j <= n)
     </script>
 </body>
 </html>
