@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modificatori RegEx JavaScript</h1>
+    <p id="demo"></p>
+
+    <script>
+        let text = `astazi ma duc la baie sa mananc java sau sa dorm java sau sa fac orice altceva Java gen java`;
+        let pattern = /java/igm;
+        let result = text.match(pattern);
+        document.getElementById("demo").innerHTML = result;
+
+        let str =`1 este luna
+maini
+0 cod
+3 crai`;
+
+        console.log(str.match(/^[1-9a-z]/gm));
+        console.log(str.match(/^[1-9]/g));
+    </script>
+</body>
+</html>
